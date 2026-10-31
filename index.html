@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Loto APE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1 id="title" contenteditable="true" spellcheck="false">Loto APE Les 4 petits perchés</h1>
+<div class="tools">
+<label class="btn">Fond d’écran<input id="bg" type="file" accept="image/*" hidden></label>
+<button id="reset">Réinitialiser</button>
+</div>
+</header>
+<main>
+<div id="left">
+<div id="phases"><button data-p="1 ligne">1 ligne</button><button data-p="2 lignes">2 lignes</button><button data-p="Carton plein">Carton plein</button></div>
+<div id="stage"><div id="box"><div id="phase"></div><div id="num">?</div></div></div>
+<div id="hist"></div>
+</div>
+<div id="grid"></div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
