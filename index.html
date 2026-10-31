@@ -24,8 +24,13 @@
 <div id="stage"><div id="box"><div id="phase"></div><div id="num">?</div></div></div>
 <div id="hist"></div>
 </div>
+<div id="right">
+<div id="lot"><div id="lotLabel">Lot en cours</div><div id="lotName" contenteditable="true" spellcheck="false" data-ph="Cliquer ici pour saisir le lot"></div>
+<div id="lotBar"><button id="lotPrev" title="Lot précédent">‹</button><span id="lotPos"></span><button id="lotNext" title="Lot suivant">›</button><button id="lotImport">Importer la liste</button></div></div>
 <div id="grid"></div>
+</div>
 </main>
+<dialog id="dlg"><h2>Liste des lots</h2><p>Un lot par ligne : colle la liste ci-dessous ou charge un fichier .txt / .csv.</p><textarea id="lotText" rows="10" placeholder="Panier garni&#10;Bon d’achat 50 €&#10;..."></textarea><div class="dlgbar"><label class="btn">Charger un fichier<input id="lotFile" type="file" accept=".txt,.csv,text/plain,text/csv" hidden></label><span style="flex:1"></span><button id="lotCancel">Annuler</button><button id="lotOk" class="ok">Importer</button></div></dialog>
 <script src="app.js"></script>
 </body>
 </html>
