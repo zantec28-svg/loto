@@ -22,14 +22,7 @@ $('reset').onclick=()=>{
   done.length=0;document.querySelectorAll('#grid .done').forEach(b=>b.classList.remove('done'));
   $('num').textContent='?';save('loto-done','[]');renderHist();
 };
-$('bg').onchange=e=>{
-  const f=e.target.files[0];if(!f)return;
-  const r=new FileReader();
-  r.onload=()=>{document.body.style.backgroundImage='url('+r.result+')';save('loto-bg',r.result)};
-  r.readAsDataURL(f);
-};
 $('title').oninput=()=>save('loto-title',$('title').textContent);
 $('title').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();e.target.blur()}};
 const t=load('loto-title');if(t)$('title').textContent=t;
-const bg=load('loto-bg');if(bg)document.body.style.backgroundImage='url('+bg+')';
 try{(JSON.parse(load('loto-done')||'[]')).forEach(n=>{done.push(n);$('b'+n).classList.add('done')});renderHist()}catch(e){}
