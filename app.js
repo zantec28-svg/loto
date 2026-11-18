@@ -6,7 +6,6 @@
 
 (() => {
   const MAX_NUMBER = 90;
-  const HISTORY_SIZE = 8;
 
   // Clés localStorage (inchangées pour conserver les données existantes)
   const KEYS = {
@@ -48,7 +47,6 @@
     phaseButtons: [...document.querySelectorAll('#phases button')],
     phase: $('phase'),
     num: $('num'),
-    hist: $('hist'),
     grid: $('grid'),
     lotName: $('lotName'),
     lotPos: $('lotPos'),
@@ -86,17 +84,6 @@
 
   // ---------- Tirage ----------
 
-  function renderHistory() {
-    el.hist.replaceChildren();
-    if (!state.drawn.length) return;
-    el.hist.append('Derniers : ');
-    state.drawn.slice(-HISTORY_SIZE).reverse().forEach((n) => {
-      const span = document.createElement('span');
-      span.textContent = n;
-      el.hist.append(span);
-    });
-  }
-
   function saveDrawn() {
     storage.setJSON(KEYS.done, state.drawn);
   }
@@ -107,7 +94,6 @@
     state.drawn.push(n);
     numberButtons.get(n).classList.add('done');
     saveDrawn();
-    renderHistory();
   }
 
   function resetDraw() {
@@ -116,7 +102,6 @@
     numberButtons.forEach((b) => b.classList.remove('done'));
     el.num.textContent = '?';
     saveDrawn();
-    renderHistory();
   }
 
   function buildGrid() {
@@ -228,7 +213,6 @@
       state.drawn.push(n);
       numberButtons.get(n).classList.add('done');
     });
-    renderHistory();
   }
 
   // ---------- Initialisation ----------
