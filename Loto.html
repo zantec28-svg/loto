@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Loto APE</title>
+<meta name="theme-color" content="#1e3a5f">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjgwIDEwIDY0MCA2NDAiIGZvbnQtZmFtaWx5PSJTZWdvZSBVSSxSb2JvdG8sQXJpYWwsc2Fucy1zZXJpZiIgeG1sbnM6YzJwYT0iaHR0cDovL2MycGEub3JnL21hbmlmZXN0Ij48bWV0YWRhdGE+PGMycGE6bWFuaWZlc3Q+QUFBV2dtcDFiV0lBQUFBZWFuVnRaR015Y0dFQUVRQVFnQUFBcWdBNG0zRURZekp3WVFBQUFCWmNhblZ0WWdBQUFFZHFkVzFrWXpKdFlRQVJBQkNBQUFDcUFEaWJjUU4xY200Nll6SndZVG94WmpBNFpUWTBNeTFpTW1ZNUxUUTFPR1V0T1RZeE5TMDFPV0kxWkRRd09ETTVNek1BQUFBRGwycDFiV0lBQUFBcGFuVnRaR015WVhNQUVRQVFnQUFBcWdBNG0zRURZekp3WVM1aGMzTmxjblJwYjI1ekFBQUFBTHhxZFcxaUFBQUFSR3AxYldSalltOXlBQkVBRUlBQUFLb0FPSnR4RTJNeWNHRXVhVzVuY21Wa2FXVnVkQzUyTXdBQUFBQVlZekp6YUpQUlNpZUUyR003WUZNNm0yU1RwRjRBQUFCd1kySnZjcU5wWkdNNlptOXliV0YwYldsdFlXZGxMM04yWnl0NGJXeHFhVzV6ZEdGdVkyVkpSSGdzZUcxd09tbHBaRG96WmpCak1UWmpOaTAyTURrMUxUUmlNR010T0RRMk1pMWhOalJqTVRRNFlXUTFNamhzY21Wc1lYUnBiMjV6YUdsd2FIQmhjbVZ1ZEU5bUFBQUI0bXAxYldJQUFBQkJhblZ0WkdOaWIzSUFFUUFRZ0FBQXFnQTRtM0VUWXpKd1lTNWhZM1JwYjI1ekxuWXlBQUFBQUJoak1uTm9paG44TEk5N0dmbFk2ZzJpT05WbVl3QUFBWmxqWW05eW9tZGhZM1JwYjI1emdxSm1ZV04wYVc5dWEyTXljR0V1YjNCbGJtVmthbkJoY21GdFpYUmxjbk9oYTJsdVozSmxaR2xsYm5SemdhSmpkWEpzZUMxelpXeG1JMnAxYldKbVBXTXljR0V1WVhOelpYSjBhVzl1Y3k5ak1uQmhMbWx1WjNKbFpHbGxiblF1ZGpOa2FHRnphRmdnQTBGRUk3SS91Rlh4QjdWSkk5UjVnT0lGRzZrZTk1OHNPdmIvOWtpbjYvdWtabUZqZEdsdmJuZ2RZMjl0TG1GdWRHaHliM0JwWXk1amJHRjFaR1V1Y0hKdmRtbGtaV1JxY0dGeVlXMWxkR1Z5YzZGNEgyTnZiUzVoYm5Sb2NtOXdhV011YjNKcFoybHVMV052Ym1acFpHVnVZMlZuZFc1cmJtOTNibXRrWlhOamNtbHdkR2x2Ym5obVEyeGhkV1JsSUhCeWIzWnBaR1ZrSUhSb2FYTWdabWxzWlNCaGRDQjBhR1VnY21WeGRXVnpkQ0J2WmlCaElIVnpaWElnWVc1a0lHMWhlU0JvWVhabElHTnlaV0YwWldRZ2IzSWdiVzlrYVdacFpXUWdkR2hsSUdacGJHVWdZMjl1ZEdWdWRITXViWE52Wm5SM1lYSmxRV2RsYm5TaFpHNWhiV1ZtUTJ4aGRXUmxjbUZzYkVGamRHbHZibk5KYm1Oc2RXUmxaUFVBQUFESWFuVnRZZ0FBQUVCcWRXMWtZMkp2Y2dBUkFCQ0FBQUNxQURpYmNSTmpNbkJoTG1oaGMyZ3VaR0YwWVFBQUFBQVlZekp6YUlHVnIwTG1NaXZwdWNLZ1l4MElQam9BQUFDQVkySnZjcVZqWVd4blpuTm9ZVEkxTm1Od1lXUk5BQUFBQUFBQUFBQUFBQUFBQUdSb1lYTm9XQ0FLRVdWS1BrbStCS2xYV29sRUl2dEhCV1VXR2syazhRaCtJRnhGUURMeVpXUnVZVzFsYm1wMWJXSm1JRzFoYm1sbVpYTjBhbVY0WTJ4MWMybHZibk9Cb21WemRHRnlkQmlzWm14bGJtZDBhQmtlQkFBQUFqNXFkVzFpQUFBQUoycDFiV1JqTW1Oc0FCRUFFSUFBQUtvQU9KdHhBMk15Y0dFdVkyeGhhVzB1ZGpJQUFBQUNEMk5pYjNLbFkyRnNaMlp6YUdFeU5UWnBjMmxuYm1GMGRYSmxlRTF6Wld4bUkycDFiV0ptUFM5ak1uQmhMM1Z5Ympwak1uQmhPakZtTURobE5qUXpMV0l5WmprdE5EVTRaUzA1TmpFMUxUVTVZalZrTkRBNE16a3pNeTlqTW5CaExuTnBaMjVoZEhWeVpXcHBibk4wWVc1alpVbEVlQ3g0YlhBNmFXbGtPbUU0WkRJME5tUTNMVGhsWVRVdE5HRmlZUzFoWW1abUxUUmpNVFF6WlRnMk0yUXdZM0pqY21WaGRHVmtYMkZ6YzJWeWRHbHZibk9Eb21OMWNteDRMWE5sYkdZamFuVnRZbVk5WXpKd1lTNWhjM05sY25ScGIyNXpMMk15Y0dFdWFXNW5jbVZrYVdWdWRDNTJNMlJvWVhOb1dDQURRVVFqc2orNFZmRUh0VWtqMUhtQTRnVWJxUjczbnl3Njl2LzJTS2ZyKzZKamRYSnNlQ3B6Wld4bUkycDFiV0ptUFdNeWNHRXVZWE56WlhKMGFXOXVjeTlqTW5CaExtRmpkR2x2Ym5NdWRqSmthR0Z6YUZnZ3o4YzZNSUdOWWNOOTQyVm85cmxwbTVSTmluMitrVS80VjNwZHlVZXFWUW1pWTNWeWJIZ3BjMlZzWmlOcWRXMWlaajFqTW5CaExtRnpjMlZ5ZEdsdmJuTXZZekp3WVM1b1lYTm9MbVJoZEdGa2FHRnphRmdnbXc3WTBqd3BRLzV6RmpMbHBKWEQ3N2VLZmZWRmpodTN0enh4cjhvVlVIVjBZMnhoYVcxZloyVnVaWEpoZEc5eVgybHVabStqWkc1aGJXVnZRVzUwYUhKdmNHbGpJRVpwYkdWelozWmxjbk5wYjI1bE1TNHdMakJyYzNCbFkxWmxjbk5wYjI1bE1pNDBMakFBQUJBNGFuVnRZZ0FBQUNocWRXMWtZekpqY3dBUkFCQ0FBQUNxQURpYmNRTmpNbkJoTG5OcFoyNWhkSFZ5WlFBQUFCQUlZMkp2Y3RLRVdRSVNvZ0VtR0NGWkFnb3dnZ0lHTUlJQmphQURBZ0VDQWhSQTVhQUs3c0k1MEw2NGcvb0dRZ1U5WjFVVEFEQUtCZ2dxaGtqT1BRUURBekJKTVJjd0ZRWURWUVFLRXc1QmJuUm9jbTl3YVdNc0lGQkNRekV1TUN3R0ExVUVBeE1sUVc1MGFISnZjR2xqSUVOdmJuUmxiblFnUTNKbFpHVnVkR2xoYkhNZ1VtOXZkQ0JEUVRBZUZ3MHlOakE0TURjeE9EUXpOVFphRncweU9EQTRNRFl4T1RRek5UWmFNRVF4RnpBVkJnTlZCQW9URGtGdWRHaHliM0JwWXl3Z1VFSkRNU2t3SndZRFZRUURFeUJCYm5Sb2NtOXdhV01nUTJ4aGRXUmxJRU52Ym5SbGJuUWdVMmxuYm1sdVp6QlpNQk1HQnlxR1NNNDlBZ0VHQ0NxR1NNNDlBd0VIQTBJQUJKaDZDbXZMVUJnRkZOVTB2VUtsT1Z0RTZkamQxN0w1U3V3WDBMZW1GaXNCTTNka2QvM2N5anhGQTNRbzVTNDZmWDAvaWhZMFZaN21mYjlLRjcwM3Q1T2pXREJXTUE0R0ExVWREd0VCL3dRRUF3SUhnREFWQmdOVkhTVUVEakFNQmdvckJnRUVBWVBvWGdJQk1Bd0dBMVVkRXdFQi93UUNNQUF3SHdZRFZSMGpCQmd3Rm9BVXpsSGlCSUZPWkZzaitPUEV6NW8rbk1IWFhNSXdDZ1lJS29aSXpqMEVBd01EWndBd1pBSXdNWE1kRko0QmV0TExWWTdPUnVFOW5vcWJiQVpPWm4vYUFyWHlUd0ZBWmZLclB6eEYydlBvSk5mMStVQ2RnMVhHQWpCd1gxemQ5V0dxWWtxbUw1U0ZxdzFReVNqcjF6SmZwSk05KzFyZER3U1BMTU9QT2pLdWlYam9VL3BVVWVHOVJ3bWhZM0JoWkZrTm5nQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUFpZUUJ0RkxmMjY3SzlIcGNRZ0ZLTXFnczVSMU0xTy9qdzdTRzVNWE5mTFNQV2FieFFhWC9NZm84Y0dVTWtFSEN0ME1LcmZTRHhBTlpRY3l2NmhpS0UzeEZjPTwvYzJwYTptYW5pZmVzdD48L21ldGFkYXRhPgo8ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmNGQ2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZkOWU2Ii8+PC9saW5lYXJHcmFkaWVudD4KPHJhZGlhbEdyYWRpZW50IGlkPSJnbGFzcyIgY3g9Ii4zNSIgY3k9Ii4zIiByPSIuOCI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9Ii44NSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2JjZDlmMiIgc3RvcC1vcGFjaXR5PSIuMzUiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2NTAiIGZpbGw9InVybCgjYmcpIi8+CjxyZWN0IHg9IjE4OCIgeT0iMjg1IiB3aWR0aD0iNDUwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjNmI3YThjIiBzdHJva2U9IiMxZTNhNWYiIHN0cm9rZS13aWR0aD0iMiIvPgo8cmVjdCB4PSIxNzgiIHk9IjI3MCIgd2lkdGg9IjI2IiBoZWlnaHQ9IjI5MCIgcng9IjYiIGZpbGw9IiMzYjViODUiIHN0cm9rZT0iIzFlM2E1ZiIgc3Ryb2tlLXdpZHRoPSIzIi8+CjxyZWN0IHg9IjU5NiIgeT0iMjcwIiB3aWR0aD0iMjYiIGhlaWdodD0iMjkwIiByeD0iNiIgZmlsbD0iIzNiNWI4NSIgc3Ryb2tlPSIjMWUzYTVmIiBzdHJva2Utd2lkdGg9IjMiLz4KPGNpcmNsZSBjeD0iNDAwIiBjeT0iMjkwIiByPSIxODAiIGZpbGw9IiNlYWY0ZmMiIGZpbGwtb3BhY2l0eT0iLjYiLz4KPGNpcmNsZSBjeD0iMzAwIiBjeT0iMzg1IiByPSIzMCIgZmlsbD0iI2UwNDU3YiIgc3Ryb2tlPSIjMWUzYTVmIiBzdHJva2Utd2lkdGg9IjIuNSIvPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjM4NSIgcj0iMTciIGZpbGw9IiNmZmYiLz48ZWxsaXBzZSBjeD0iMjg5IiBjeT0iMzY4IiByeD0iOCIgcnk9IjUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii41IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzUgMjg5IDM2OCkiLz48dGV4dCB4PSIzMDAiIHk9IjM5MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxOSIgZm9udC13ZWlnaHQ9IjgwMCIgZmlsbD0iIzFlM2E1ZiI+MTc8L3RleHQ+PGNpcmNsZSBjeD0iMzY1IiBjeT0iNDEwIiByPSIzMCIgZmlsbD0iI2YyYTkwMCIgc3Ryb2tlPSIjMWUzYTVmIiBzdHJva2Utd2lkdGg9IjIuNSIvPjxjaXJjbGUgY3g9IjM2NSIgY3k9IjQxMCIgcj0iMTciIGZpbGw9IiNmZmYiLz48ZWxsaXBzZSBjeD0iMzU0IiBjeT0iMzkzIiByeD0iOCIgcnk9IjUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii41IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzUgMzU0IDM5MykiLz48dGV4dCB4PSIzNjUiIHk9IjQxNyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxOSIgZm9udC13ZWlnaHQ9IjgwMCIgZmlsbD0iIzFlM2E1ZiI+NTI8L3RleHQ+PGNpcmNsZSBjeD0iNDM1IiBjeT0iNDEyIiByPSIzMCIgZmlsbD0iIzJlOWU1YiIgc3Ryb2tlPSIjMWUzYTVmIiBzdHJva2Utd2lkdGg9IjIuNSIvPjxjaXJjbGUgY3g9IjQzNSIgY3k9IjQxMiIgcj0iMTciIGZpbGw9IiNmZmYiLz48ZWxsaXBzZSBjeD0iNDI0IiBjeT0iMzk1IiByeD0iOCIgcnk9IjUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii41IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzUgNDI0IDM5NSkiLz48dGV4dCB4PSI0MzUiIHk9IjQxOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxOSIgZm9udC13ZWlnaHQ9IjgwMCIgZmlsbD0iIzFlM2E1ZiI+ODwvdGV4dD48Y2lyY2xlIGN4PSI1MDAiIGN5PSIzODUiIHI9IjMwIiBmaWxsPSIjM2I4MmM0IiBzdHJva2U9IiMxZTNhNWYiIHN0cm9rZS13aWR0aD0iMi41Ii8+PGNpcmNsZSBjeD0iNTAwIiBjeT0iMzg1IiByPSIxNyIgZmlsbD0iI2ZmZiIvPjxlbGxpcHNlIGN4PSI0ODkiIGN5PSIzNjgiIHJ4PSI4IiByeT0iNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjUiIHRyYW5zZm9ybT0icm90YXRlKC0zNSA0ODkgMzY4KSIvPjx0ZXh0IHg9IjUwMCIgeT0iMzkyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE5IiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjMWUzYTVmIj43MTwvdGV4dD48Y2lyY2xlIGN4PSIzMzUiIGN5PSIzNDAiIHI9IjMwIiBmaWxsPSIjOGE0ZmM0IiBzdHJva2U9IiMxZTNhNWYiIHN0cm9rZS13aWR0aD0iMi41Ii8+PGNpcmNsZSBjeD0iMzM1IiBjeT0iMzQwIiByPSIxNyIgZmlsbD0iI2ZmZiIvPjxlbGxpcHNlIGN4PSIzMjQiIGN5PSIzMjMiIHJ4PSI4IiByeT0iNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjUiIHRyYW5zZm9ybT0icm90YXRlKC0zNSAzMjQgMzIzKSIvPjx0ZXh0IHg9IjMzNSIgeT0iMzQ3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE5IiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjMWUzYTVmIj4zMzwvdGV4dD48Y2lyY2xlIGN4PSI0MDAiIGN5PSIzNTUiIHI9IjMwIiBmaWxsPSIjZTg1OTBjIiBzdHJva2U9IiMxZTNhNWYiIHN0cm9rZS13aWR0aD0iMi41Ii8+PGNpcmNsZSBjeD0iNDAwIiBjeT0iMzU1IiByPSIxNyIgZmlsbD0iI2ZmZiIvPjxlbGxpcHNlIGN4PSIzODkiIGN5PSIzMzgiIHJ4PSI4IiByeT0iNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjUiIHRyYW5zZm9ybT0icm90YXRlKC0zNSAzODkgMzM4KSIvPjx0ZXh0IHg9IjQwMCIgeT0iMzYyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE5IiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjMWUzYTVmIj42NDwvdGV4dD48Y2lyY2xlIGN4PSI0NjgiIGN5PSIzMzgiIHI9IjMwIiBmaWxsPSIjZTA0NTdiIiBzdHJva2U9IiMxZTNhNWYiIHN0cm9rZS13aWR0aD0iMi41Ii8+PGNpcmNsZSBjeD0iNDY4IiBjeT0iMzM4IiByPSIxNyIgZmlsbD0iI2ZmZiIvPjxlbGxpcHNlIGN4PSI0NTciIGN5PSIzMjEiIHJ4PSI4IiByeT0iNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjUiIHRyYW5zZm9ybT0icm90YXRlKC0zNSA0NTcgMzIxKSIvPjx0ZXh0IHg9IjQ2OCIgeT0iMzQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE5IiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjMWUzYTVmIj4yNTwvdGV4dD48Y2lyY2xlIGN4PSIzNzUiIGN5PSIyODUiIHI9IjMwIiBmaWxsPSIjZjJhOTAwIiBzdHJva2U9IiMxZTNhNWYiIHN0cm9rZS13aWR0aD0iMi41Ii8+PGNpcmNsZSBjeD0iMzc1IiBjeT0iMjg1IiByPSIxNyIgZmlsbD0iI2ZmZiIvPjxlbGxpcHNlIGN4PSIzNjQiIGN5PSIyNjgiIHJ4PSI4IiByeT0iNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjUiIHRyYW5zZm9ybT0icm90YXRlKC0zNSAzNjQgMjY4KSIvPjx0ZXh0IHg9IjM3NSIgeT0iMjkyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE5IiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjMWUzYTVmIj44OTwvdGV4dD48Y2lyY2xlIGN4PSI0NDUiIGN5PSIyNzAiIHI9IjMwIiBmaWxsPSIjMmU5ZTViIiBzdHJva2U9IiMxZTNhNWYiIHN0cm9rZS13aWR0aD0iMi41Ii8+PGNpcmNsZSBjeD0iNDQ1IiBjeT0iMjcwIiByPSIxNyIgZmlsbD0iI2ZmZiIvPjxlbGxpcHNlIGN4PSI0MzQiIGN5PSIyNTMiIHJ4PSI4IiByeT0iNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjUiIHRyYW5zZm9ybT0icm90YXRlKC0zNSA0MzQgMjUzKSIvPjx0ZXh0IHg9IjQ0NSIgeT0iMjc3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE5IiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjMWUzYTVmIj40MTwvdGV4dD48Y2lyY2xlIGN4PSIzMzUiIGN5PSIyNTUiIHI9IjMwIiBmaWxsPSIjM2I4MmM0IiBzdHJva2U9IiMxZTNhNWYiIHN0cm9rZS13aWR0aD0iMi41Ii8+PGNpcmNsZSBjeD0iMzM1IiBjeT0iMjU1IiByPSIxNyIgZmlsbD0iI2ZmZiIvPjxlbGxpcHNlIGN4PSIzMjQiIGN5PSIyMzgiIHJ4PSI4IiByeT0iNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjUiIHRyYW5zZm9ybT0icm90YXRlKC0zNSAzMjQgMjM4KSIvPjx0ZXh0IHg9IjMzNSIgeT0iMjYyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE5IiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjMWUzYTVmIj42PC90ZXh0PjxjaXJjbGUgY3g9IjQ4MCIgY3k9IjIyNSIgcj0iMzAiIGZpbGw9IiM4YTRmYzQiIHN0cm9rZT0iIzFlM2E1ZiIgc3Ryb2tlLXdpZHRoPSIyLjUiLz48Y2lyY2xlIGN4PSI0ODAiIGN5PSIyMjUiIHI9IjE3IiBmaWxsPSIjZmZmIi8+PGVsbGlwc2UgY3g9IjQ2OSIgY3k9IjIwOCIgcng9IjgiIHJ5PSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDQ2OSAyMDgpIi8+PHRleHQgeD0iNDgwIiB5PSIyMzIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IiMxZTNhNWYiPjQ3PC90ZXh0PjxjaXJjbGUgY3g9IjQwMCIgY3k9IjIxNSIgcj0iMzAiIGZpbGw9IiNlODU5MGMiIHN0cm9rZT0iIzFlM2E1ZiIgc3Ryb2tlLXdpZHRoPSIyLjUiLz48Y2lyY2xlIGN4PSI0MDAiIGN5PSIyMTUiIHI9IjE3IiBmaWxsPSIjZmZmIi8+PGVsbGlwc2UgY3g9IjM4OSIgY3k9IjE5OCIgcng9IjgiIHJ5PSI1IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDM4OSAxOTgpIi8+PHRleHQgeD0iNDAwIiB5PSIyMjIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IiMxZTNhNWYiPjEyPC90ZXh0Pgo8Y2lyY2xlIGN4PSI0MDAiIGN5PSIyOTAiIHI9IjE4MCIgZmlsbD0idXJsKCNnbGFzcykiIHN0cm9rZT0iIzFlM2E1ZiIgc3Ryb2tlLXdpZHRoPSI1Ii8+CjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFlM2E1ZiIgc3Ryb2tlLXdpZHRoPSIyLjUiIG9wYWNpdHk9Ii43NSI+PGVsbGlwc2UgY3g9IjQwMCIgY3k9IjI5MCIgcng9IjQ1IiByeT0iMTgwIi8+PGVsbGlwc2UgY3g9IjQwMCIgY3k9IjI5MCIgcng9Ijk1IiByeT0iMTgwIi8+PGVsbGlwc2UgY3g9IjQwMCIgY3k9IjI5MCIgcng9IjE0MCIgcnk9IjE4MCIvPjxlbGxpcHNlIGN4PSI0MDAiIGN5PSIxNzAiIHJ4PSIxMzQiIHJ5PSIyMSIvPjxlbGxpcHNlIGN4PSI0MDAiIGN5PSIyMzAiIHJ4PSIxNzAiIHJ5PSIyNyIvPjxlbGxpcHNlIGN4PSI0MDAiIGN5PSIyOTAiIHJ4PSIxODAiIHJ5PSIyOCIvPjxlbGxpcHNlIGN4PSI0MDAiIGN5PSIzNTAiIHJ4PSIxNzAiIHJ5PSIyNyIvPjxlbGxpcHNlIGN4PSI0MDAiIGN5PSI0MTAiIHJ4PSIxMzQiIHJ5PSIyMSIvPjwvZz4KPGNpcmNsZSBjeD0iNDAwIiBjeT0iMjkwIiByPSIxNCIgZmlsbD0iIzZiN2E4YyIgc3Ryb2tlPSIjMWUzYTVmIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTYyMiAyOTAgSDY5MCBWMzYyIiBmaWxsPSJub25lIiBzdHJva2U9IiMxZTNhNWYiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNjIyIDI5MCBINjkwIFYzNjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzlhYThiOCIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPGNpcmNsZSBjeD0iNjkwIiBjeT0iMzc4IiByPSIyMCIgZmlsbD0iI2UwNDU3YiIgc3Ryb2tlPSIjMWUzYTVmIiBzdHJva2Utd2lkdGg9IjMuNSIvPgo8cmVjdCB4PSIxMzAiIHk9IjU0NSIgd2lkdGg9IjU0MCIgaGVpZ2h0PSI1NiIgcng9IjE0IiBmaWxsPSIjMWUzYTVmIi8+Cjx0ZXh0IHg9IjQwMCIgeT0iNTg3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjM2IiBmb250LXdlaWdodD0iOTAwIiBsZXR0ZXItc3BhY2luZz0iMTAiIGZpbGw9IiNmZmYiPkxPVE88L3RleHQ+CjxyZWN0IHg9IjE1MCIgeT0iNTk4IiB3aWR0aD0iNDAiIGhlaWdodD0iMTQiIHJ4PSI1IiBmaWxsPSIjMTQyNjNmIi8+PHJlY3QgeD0iNjEwIiB5PSI1OTgiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxNCIgcng9IjUiIGZpbGw9IiMxNDI2M2YiLz4KPGNpcmNsZSBjeD0iMzIwIiBjeT0iNTE3IiByPSIyOCIgZmlsbD0iI2YyYTkwMCIgc3Ryb2tlPSIjMWUzYTVmIiBzdHJva2Utd2lkdGg9IjIuNSIvPjxjaXJjbGUgY3g9IjMyMCIgY3k9IjUxNyIgcj0iMTYiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSIzMjAiIHk9IjUyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxOSIgZm9udC13ZWlnaHQ9IjgwMCIgZmlsbD0iIzFlM2E1ZiI+OTA8L3RleHQ+CjxjaXJjbGUgY3g9IjQ3OCIgY3k9IjUxNyIgcj0iMjgiIGZpbGw9IiMyZTllNWIiIHN0cm9rZT0iIzFlM2E1ZiIgc3Ryb2tlLXdpZHRoPSIyLjUiLz48Y2lyY2xlIGN4PSI0NzgiIGN5PSI1MTciIHI9IjE2IiBmaWxsPSIjZmZmIi8+PHRleHQgeD0iNDc4IiB5PSI1MjQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTkiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IiMxZTNhNWYiPjU8L3RleHQ+Cjwvc3ZnPg==">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:inherit}
+html,body{height:100%;margin:0}
+body{font-family:"Segoe UI",Roboto,Arial,sans-serif;background:#bfe3f7;color:#fff;display:flex;flex-direction:column;height:100%}
+header{display:flex;align-items:center;gap:12px;padding:12px 16px;background:rgba(0,0,0,.45)}
+h1{flex:1;margin:0;text-align:center;font-size:clamp(1.4rem,4.5vw,3.2rem);letter-spacing:.04em;text-transform:uppercase;text-shadow:0 2px 8px #000}
+button,label.btn{font:inherit;cursor:pointer;border:0;border-radius:8px;padding:8px 12px;background:#fff;color:#222}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+main{flex:1;min-height:0;display:flex;gap:16px;padding:16px 16px 0}
+#left{flex:5;min-width:0;display:flex;flex-direction:column;gap:10px}
+#stage{flex:1;min-height:0;display:flex;justify-content:center;align-items:center}
+#box{height:100%;max-width:100%;aspect-ratio:1;background:#fff;color:#111;border-radius:20px;box-shadow:0 8px 30px rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2cqmin;container-type:size}
+#num{font-size:52cqmin;font-weight:800;line-height:1}
+#phase{min-height:12cqmin;font-size:9cqmin;font-weight:800;color:#e0457b;text-transform:uppercase;letter-spacing:.05em;text-align:center}
+#phases{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+#phases button{font-weight:700;font-size:1.1rem;padding:10px 18px}
+#phases button.on{background:#e0457b;color:#fff}
+#grid{flex:none;width:min(100cqw,100cqh*10/9);min-width:0;display:grid;grid-template-columns:repeat(10,1fr);gap:.6cqw;align-content:center;background:rgba(0,0,0,.4);padding:1.2cqw;border-radius:14px;container-type:inline-size}
+#grid button{padding:0;aspect-ratio:1;font-weight:800;font-size:4.2cqw;border-radius:6px;background:#fff}
+#grid button.done{background:#e0457b;color:#fff}
+#right{flex:4;min-width:0;min-height:0;display:flex;align-items:center;justify-content:center;container-type:size}
+#lot{flex:none;display:flex;align-items:center;gap:16px;margin:16px;background:#e0457b;color:#fff;border-radius:14px;padding:12px 20px;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+#lotLabel{flex:none;font-size:1rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;opacity:.9}
+#lotName{flex:1;min-width:0;font-size:clamp(1.6rem,3.4vw,3.4rem);font-weight:800;line-height:1.15;outline:none;overflow-wrap:anywhere}
+#lotName:empty:before{content:attr(data-ph);opacity:.65;font-weight:600;font-size:.6em}
+#lotBar{flex:none;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+#lotBar button{padding:6px 12px;font-weight:700}
+#lotPos{min-width:90px;font-weight:700}
+button:disabled{opacity:.4;cursor:default}
+dialog{border:0;border-radius:14px;padding:18px;width:min(520px,92vw);color:#222}
+dialog::backdrop{background:rgba(0,0,0,.5)}
+dialog h2{margin:0 0 6px}
+dialog p{margin:0 0 10px;font-size:.9rem}
+#lotText{width:100%;font:inherit;padding:8px;border:1px solid #aaa;border-radius:8px;resize:vertical}
+.dlgbar{display:flex;gap:8px;align-items:center;margin-top:12px}
+dialog .btn,dialog button{background:#e8eef5}
+dialog button.ok{background:#e0457b;color:#fff}
+@media(max-width:800px){main{flex-direction:column;overflow:auto}#left{flex:none;height:70vw;min-height:300px}#right{flex:none;container-type:inline-size}#grid{width:100%}#lot{flex-direction:column;gap:8px;margin:12px}}
+</style>
+</head>
+<body>
+<header>
+<h1 id="title" contenteditable="true" spellcheck="false">Loto APE Les 4 petits perchés</h1>
+<div class="tools">
+<button id="reset">Réinitialiser</button>
+</div>
+</header>
+<main>
+<div id="left">
+<div id="phases"><button data-p="1 ligne">1 ligne</button><button data-p="2 lignes">2 lignes</button><button data-p="Carton plein">Carton plein</button></div>
+<div id="stage"><div id="box"><div id="phase"></div><div id="num">?</div></div></div>
+</div>
+<div id="right">
+<div id="grid"></div>
+</div>
+</main>
+<footer id="lot"><div id="lotLabel">Lot en cours</div><div id="lotName" contenteditable="true" spellcheck="false" data-ph="Cliquer ici pour saisir le lot"></div>
+<div id="lotBar"><button id="lotPrev" title="Lot précédent">‹</button><span id="lotPos"></span><button id="lotNext" title="Lot suivant">›</button><button id="lotImport">Importer la liste</button></div></footer>
+<dialog id="dlg"><h2>Liste des lots</h2><p>Un lot par ligne : colle la liste ci-dessous ou charge un fichier .txt / .csv.</p><textarea id="lotText" rows="10" placeholder="Panier garni&#10;Bon d’achat 50 €&#10;..."></textarea><div class="dlgbar"><label class="btn">Charger un fichier<input id="lotFile" type="file" accept=".txt,.csv,text/plain,text/csv" hidden></label><span style="flex:1"></span><button id="lotCancel">Annuler</button><button id="lotOk" class="ok">Importer</button></div></dialog>
+<script>
+/*
+ * Loto APE — tirage du loto (numéros 1 à 90), phases de jeu et liste des lots.
+ * Tout l'état est conservé dans le localStorage du navigateur.
+ */
+'use strict';
+
+(() => {
+  const MAX_NUMBER = 90;
+
+  // Clés localStorage (inchangées pour conserver les données existantes)
+  const KEYS = {
+    done: 'loto-done',
+    title: 'loto-title',
+    lots: 'loto-lots',
+    lotIndex: 'loto-li',
+    singleLot: 'loto-lot',
+  };
+
+  // ---------- Stockage ----------
+
+  const storage = {
+    get(key) {
+      try { return localStorage.getItem(key); } catch { return null; }
+    },
+    set(key, value) {
+      try { localStorage.setItem(key, value); } catch { /* stockage indisponible */ }
+    },
+    getJSON(key, fallback) {
+      try {
+        const raw = this.get(key);
+        return raw == null ? fallback : JSON.parse(raw);
+      } catch {
+        return fallback;
+      }
+    },
+    setJSON(key, value) {
+      this.set(key, JSON.stringify(value));
+    },
+  };
+
+  // ---------- Éléments du DOM ----------
+
+  const $ = (id) => document.getElementById(id);
+  const el = {
+    title: $('title'),
+    reset: $('reset'),
+    phaseButtons: [...document.querySelectorAll('#phases button')],
+    phase: $('phase'),
+    num: $('num'),
+    grid: $('grid'),
+    lotName: $('lotName'),
+    lotPos: $('lotPos'),
+    lotPrev: $('lotPrev'),
+    lotNext: $('lotNext'),
+    lotImport: $('lotImport'),
+    dialog: $('dlg'),
+    lotText: $('lotText'),
+    lotFile: $('lotFile'),
+    lotCancel: $('lotCancel'),
+    lotOk: $('lotOk'),
+  };
+
+  // ---------- État ----------
+
+  const state = {
+    drawn: [],          // numéros tirés, dans l'ordre
+    lots: [],           // liste des lots importée
+    lotIndex: 0,        // lot affiché
+  };
+
+  const numberButtons = new Map(); // numéro -> bouton de la grille
+
+  // ---------- Utilitaires ----------
+
+  /** Rend un élément contenteditable « mono-ligne » : Entrée valide la saisie. */
+  function singleLine(element) {
+    element.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        element.blur();
+      }
+    });
+  }
+
+  // ---------- Tirage ----------
+
+  function saveDrawn() {
+    storage.setJSON(KEYS.done, state.drawn);
+  }
+
+  function drawNumber(n) {
+    el.num.textContent = n;
+    if (state.drawn.includes(n)) return;
+    state.drawn.push(n);
+    numberButtons.get(n).classList.add('done');
+    saveDrawn();
+  }
+
+  function resetDraw() {
+    if (!confirm('Remettre le tirage à zéro ?')) return;
+    state.drawn = [];
+    numberButtons.forEach((b) => b.classList.remove('done'));
+    el.num.textContent = '?';
+    saveDrawn();
+  }
+
+  function buildGrid() {
+    const fragment = document.createDocumentFragment();
+    for (let n = 1; n <= MAX_NUMBER; n++) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.id = 'b' + n;
+      button.textContent = n;
+      button.addEventListener('click', () => drawNumber(n));
+      numberButtons.set(n, button);
+      fragment.append(button);
+    }
+    el.grid.append(fragment);
+  }
+
+  // ---------- Phases (1 ligne, 2 lignes, carton plein) ----------
+
+  function togglePhase(button) {
+    const wasActive = button.classList.contains('on');
+    el.phaseButtons.forEach((b) => b.classList.remove('on'));
+    el.phase.textContent = '';
+    if (!wasActive) {
+      button.classList.add('on');
+      el.phase.textContent = button.dataset.p;
+    }
+  }
+
+  // ---------- Lots ----------
+
+  function saveLots() {
+    storage.setJSON(KEYS.lots, state.lots);
+    storage.set(KEYS.lotIndex, String(state.lotIndex));
+  }
+
+  function renderLot() {
+    const { lots, lotIndex } = state;
+    const hasLots = lots.length > 0;
+    el.lotName.textContent = hasLots ? lots[lotIndex] : (storage.get(KEYS.singleLot) || '');
+    el.lotPos.textContent = hasLots ? `Lot ${lotIndex + 1} / ${lots.length}` : '';
+    el.lotPrev.disabled = !hasLots || lotIndex === 0;
+    el.lotNext.disabled = !hasLots || lotIndex === lots.length - 1;
+  }
+
+  function moveLot(delta) {
+    if (!state.lots.length) return;
+    state.lotIndex = Math.min(state.lots.length - 1, Math.max(0, state.lotIndex + delta));
+    saveLots();
+    renderLot();
+  }
+
+  function editLotName() {
+    const value = el.lotName.textContent;
+    if (state.lots.length) {
+      state.lots[state.lotIndex] = value;
+      saveLots();
+    } else {
+      storage.set(KEYS.singleLot, value);
+    }
+  }
+
+  /** Une ligne = un lot ; ignore les lignes vides et les guillemets CSV. */
+  function parseLots(text) {
+    return text
+      .split(/\r?\n/)
+      .map((line) => line.trim().replace(/^"(.*)"$/, '$1'))
+      .filter(Boolean);
+  }
+
+  function openImportDialog() {
+    el.lotText.value = state.lots.join('\n');
+    el.dialog.showModal();
+  }
+
+  function loadLotFile(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      el.lotText.value = String(reader.result).replace(/^﻿/, ''); // retire le BOM
+    };
+    reader.readAsText(file);
+    e.target.value = '';
+  }
+
+  function confirmImport() {
+    state.lots = parseLots(el.lotText.value);
+    state.lotIndex = 0;
+    saveLots();
+    renderLot();
+    el.dialog.close();
+  }
+
+  // ---------- Restauration de l'état sauvegardé ----------
+
+  function restore() {
+    const title = storage.get(KEYS.title);
+    if (title) el.title.textContent = title;
+
+    const lots = storage.getJSON(KEYS.lots, []);
+    state.lots = Array.isArray(lots) ? lots : [];
+    const index = parseInt(storage.get(KEYS.lotIndex) || '0', 10) || 0;
+    state.lotIndex = index >= 0 && index < state.lots.length ? index : 0;
+    renderLot();
+
+    const drawn = storage.getJSON(KEYS.done, []);
+    (Array.isArray(drawn) ? drawn : []).forEach((n) => {
+      if (!numberButtons.has(n) || state.drawn.includes(n)) return;
+      state.drawn.push(n);
+      numberButtons.get(n).classList.add('done');
+    });
+  }
+
+  // ---------- Initialisation ----------
+
+  function init() {
+    buildGrid();
+
+    el.phaseButtons.forEach((b) => b.addEventListener('click', () => togglePhase(b)));
+    el.reset.addEventListener('click', resetDraw);
+
+    el.title.addEventListener('input', () => storage.set(KEYS.title, el.title.textContent));
+    singleLine(el.title);
+
+    el.lotPrev.addEventListener('click', () => moveLot(-1));
+    el.lotNext.addEventListener('click', () => moveLot(1));
+    el.lotName.addEventListener('input', editLotName);
+    singleLine(el.lotName);
+
+    el.lotImport.addEventListener('click', openImportDialog);
+    el.lotFile.addEventListener('change', loadLotFile);
+    el.lotCancel.addEventListener('click', () => el.dialog.close());
+    el.lotOk.addEventListener('click', confirmImport);
+
+    restore();
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
